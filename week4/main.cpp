@@ -1,12 +1,14 @@
 #include "Reverse.h"
+#include "Truckloads.h"
+#include "EfficientTruckloads.h"
 #include <iostream>
 
 using namespace std;
 
 int main() {
     Reverse reverse;
-    string tmp = "helloworld";
-    cout << reverse.reverseDigit(9876) << endl;
-    cout << reverse.reverseString("helloworld") << endl;
+    Truckloads truck;
+    EfficientTruckloads efficient;
+    cout << efficient.numTrucks(14 ,3) << endl;
     return 0;
 }

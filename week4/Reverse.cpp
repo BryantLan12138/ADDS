@@ -7,6 +7,9 @@ static string str_result;
 
 int Reverse::reverseDigit(int value) {
     // base case
+    if(value < 0) {
+        return -1;
+    }
     if(value < 10) {
         return result + value;
     }
@@ -17,9 +20,12 @@ int Reverse::reverseDigit(int value) {
 }
 
 string Reverse::reverseString(string letters) {
+    if(letters.length() < 0) {
+        return "ERROR";
+    }
     
-    if(letters.length() == 1){
-        return str_result + letters;
+    if(letters.length() == 0){
+        return str_result;
     }
 
     str_result += letters.back();
